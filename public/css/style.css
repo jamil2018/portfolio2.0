@@ -1,90 +1,154 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,400&display=swap");
-
-/* variables */
 :root {
-  /* color */
-  --text-primary: #303030;
-  --text-secondary: #d4d4d4;
-  --bg-primary: #21e6c1;
-  --bg-secondary: #278ea5;
-  --body: #fdfdfd;
-  /* font family */
-  --font-family: "Poppins", sans-serif;
+  /* colors */
+  --color-primary: #181818;
+  --color-secondary: #e67b00;
+  --color-dark: #111111;
+  --color-white: #ffffff;
+  --color-grey: #898989;
+  --color-light: #f2f2f2;
+
+  /* font */
+  --body-font: "Poppins", sans-serif;
   /* font size */
-  --h1-size: 2.2rem;
-  --h2-size: 1.9rem;
-  --h3-size: 1.6rem;
+  --font-heading: 3.5rem;
+  --font-h1: 1.5rem;
+  --font-h2: 1.25rem;
+  --font-h3: 1rem;
+  --font-normal: 0.938rem;
+  --font-small: 0.813rem;
+  --font-smaller: 0.75rem;
   /* font weight */
-  --bold: 500;
-  --regular: 400;
-  --light: 300;
+  --weight-bold: 500;
+  --weight-regular: 400;
+  --weight-light: 300;
+  --weight-thick: 800;
+
+  /* distance */
+  --d-1: 0.5rem;
+  --d-2: 1rem;
+  --d-3: 1.5rem;
+  --d-4: 2rem;
+  --d-5: 2.5rem;
+  --d-6: 3rem;
+
+  /* screen sizes */
+  --container: 90vw;
+  --full-height: 100vh;
+  --full-width: 100vw;
 }
 
-/* base setup */
+/* base css */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: var(--font-family);
-  color: var(--text-primary);
-  background-color: var(--body);
-  font-weight: var(--light);
+  font-family: var(--body-font);
+  background: var(--color-white);
+  color: var(--color-dark);
+  font-weight: var(--weight-regular);
+  font-size: var(--font-normal);
 }
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: var(--bold);
+h3 {
+  font-weight: var(--weight-bold);
 }
 h1 {
-  font-size: var(--h1-size);
+  font-size: var(--font-h1);
 }
 h2 {
-  font-size: var(--h2-size);
+  font-size: var(--font-h2);
 }
 h3 {
-  font-size: var(--h3-size);
+  font-size: var(--font-h3);
 }
-
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 /* base classes */
 .container {
-  max-width: 90vw;
+  max-width: var(--container);
   margin: auto;
-  padding: 1rem 0rem;
 }
-.flex-container {
-  display: flex;
-}
-.justify-center {
-  justify-content: center;
-}
-.justify-space-between {
-  justify-content: space-between;
-}
-.justify-flex-end {
-  justify-content: flex-end;
-}
-.justify-flex-start {
-  justify-content: flex-start;
-}
-.align-items-center {
-  align-items: center;
-}
-.align-items-space-between {
-  align-items: space-between;
-}
-.align-items-flex-end {
-  align-items: flex-end;
-}
-.align-items-flex-start {
-  align-items: flex-start;
+.heading {
+  font-size: var(--font-heading);
+  font-weight: var(--weight-thick);
 }
 
 /* header */
 .header {
-  background-color: var(--bg-primary);
+  height: var(--full-height);
+  padding: var(--d-3) var(--d-5);
+  background: var(--color-primary);
+  position: relative;
+  color: var(--color-white);
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header__brand {
+  font-size: var(--font-h2);
+}
+.header__items {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  align-items: center;
+}
+.header__link {
+  color: var(--color-white);
+  position: relative;
+  transition: 0.2s ease-in-out;
+}
+.header__link:hover {
+  color: var(--color-grey);
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70%;
+}
+.header__text {
+  border-left: 6px solid var(--color-grey);
+  padding-left: var(--d-2);
+}
+.header__cta {
+  margin-top: var(--d-6);
+  display: inline-block;
+  color: var(--color-white);
+  padding: var(--d-1) var(--d-2);
+  border-radius: var(--d-1);
+  text-align: center;
+  background: var(--color-secondary);
+  transition: background 0.3s ease-in-out;
+}
+.header__cta:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.header__shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+.header__shape svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  transform: rotateY(180deg);
+}
+
+.header__shape .shape-fill {
+  fill: #ffffff;
 }

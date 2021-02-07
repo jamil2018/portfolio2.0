@@ -4,21 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/app.js" defer></script>
     <title>Jamil - Portfolio</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="flex-container justify-space-between align-items-center">
-          <h1>Jamil - Portfolio 2.0</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequuntur beatae, esse fuga sapiente eos at aliquid! Esse
-            similique deserunt necessitatibus?
-          </p>
+    <header class="header" id="header">
+      <nav class="header__nav container">
+        <div class="header__brand">Hasnat Jamil</div>
+        <ul class="header__items">
+          <li><a class="header__link" href="#header">Home</a></li>
+          <li><a class="header__link" href="#about">About</a></li>
+          <li><a class="header__link" href="#services">Services</a></li>
+          <li><a class="header__link" href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+      <div class="header__content container">
+        <div class="header__text">
+          <h3>hey, I am</h3>
+          <h1 class="heading">Hasnat Jamil</h1>
+          <h3 class="header__secondaryHeading">
+            Web Developer, QA Engineer, UI Designer
+          </h3>
+          <a href="#" class="header__cta">Download CV</a>
         </div>
+        <img
+          src="./img/header_img.jph"
+          alt="header_img"
+          class="header__image"
+        />
+      </div>
+      <div class="header__shape">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+            class="shape-fill"
+          ></path>
+        </svg>
       </div>
     </header>
   </body>
