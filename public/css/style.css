@@ -32,7 +32,7 @@
   --d-6: 3rem;
 
   /* screen sizes */
-  --container: 90vw;
+  --container: 85vw;
   --full-height: 100vh;
   --full-width: 100vw;
 }
@@ -95,11 +95,14 @@ a {
 .header__brand {
   font-size: var(--font-h2);
 }
-.header__items {
+.header_brand_link {
+  color: var(--color-white);
+}
+.header__links {
   display: flex;
   justify-content: space-between;
-  width: 25%;
   align-items: center;
+  width: 20%;
 }
 .header__link {
   color: var(--color-white);
@@ -131,6 +134,17 @@ a {
 }
 .header__cta:hover {
   background: rgba(255, 255, 255, 0.2);
+}
+.header__socialLinks {
+  display: flex;
+  margin-top: var(--d-6);
+}
+.header__socialLink {
+  margin-right: var(--d-5);
+}
+.header__image {
+  border-radius: 50%;
+  max-width: 18%;
 }
 .header__shape {
   position: absolute;
