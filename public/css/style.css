@@ -44,12 +44,30 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--body-font);
   background: var(--color-white);
   color: var(--color-dark);
   font-weight: var(--weight-regular);
   font-size: var(--font-normal);
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-light);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-grey);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary);
 }
 h1,
 h2,
@@ -216,4 +234,36 @@ img {
 .about__img {
   width: 50%;
   padding-left: var(--d-4);
+}
+.about__content_education {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.about__workExperience {
+  width: 45%;
+}
+.about__education {
+  width: 45%;
+}
+.about__subHeading {
+  display: flex;
+  align-items: center;
+}
+.about__infoGroup {
+  margin-top: var(--d-3);
+  padding-bottom: var(--d-2);
+  border-bottom: 1px solid var(--color-grey);
+  margin-bottom: var(--d-2);
+}
+.about__subHeading__text {
+  margin-left: var(--d-1);
+}
+.about__infoGroup__content {
+  margin-top: var(--d-2);
+  display: flex;
+  justify-content: space-between;
+}
+.about__info {
+  font-size: var(--font-small);
 }
