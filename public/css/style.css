@@ -33,7 +33,7 @@
   --d-6: 3rem;
 
   /* screen sizes */
-  --container: 85vw;
+  --container: 80vw;
   --full-height: 100vh;
   --full-width: 100vw;
 }
@@ -112,6 +112,12 @@ img {
   font-size: var(--font-secondaryHeading);
   font-weight: var(--weight-bold);
 }
+.subtitle {
+  font-size: var(--font-small);
+  font-weight: var(--weight-light);
+  color: var(--color-grey);
+  margin-bottom: var(--d-1);
+}
 .article__content {
   min-height: var(--full-height);
   margin-top: var(--d-3);
@@ -120,6 +126,23 @@ img {
   text-align: center;
   padding: var(--d-2);
   margin-bottom: var(--d-4);
+}
+.btn {
+  color: inherit;
+  text-align: center;
+  background: none;
+  padding: var(--d-1);
+  margin: var(--d-2) 0rem;
+  display: inline-block;
+  border-radius: 3px;
+  transition: background 0.3s ease-in-out;
+}
+.btn--primary {
+  background: var(--color-secondary);
+  color: var(--color-white);
+}
+.btn--primary:hover {
+  background: var(--color-grey);
 }
 /* header */
 .header {
@@ -292,7 +315,6 @@ img {
   align-items: center;
   background: var(--color-light);
   max-width: 33%;
-  height: 300px;
 }
 .services__card__body {
   text-align: center;
@@ -308,10 +330,10 @@ img {
 .section__card__text {
   font-weight: var(--weight-regular);
   line-height: initial;
-  font-size: var(--font-normal);
+  font-size: var(--font-small);
 }
 .services__cta {
-  margin-top: var(--d-6);
+  margin-top: var(--d-3);
   padding: var(--d-3);
   display: flex;
   justify-content: space-between;
@@ -319,23 +341,39 @@ img {
 .services__cta__img {
   width: 50%;
 }
-.services__cta__text {
+.services__cta__content {
   width: 45%;
+  display: flex;
 }
-.btn {
-  color: inherit;
-  text-align: center;
-  background: none;
+
+/* portfolio */
+.portfolio__cardGrid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.portfolio__card {
+  max-width: 30%;
+  background: var(--color-light);
+  border-radius: 5px;
+  margin-bottom: var(--d-4);
+}
+.portfolio__card__cardImage {
+  margin-bottom: var(--d-4);
   padding: var(--d-1);
-  margin: var(--d-2) 0rem;
+  height: 60%;
+}
+.portfolio__card__content {
+  padding: var(--d-2);
+}
+.portfolio__card__link {
+  margin-top: var(--d-1);
   display: inline-block;
-  border-radius: 3px;
-  transition: background 0.3s ease-in-out;
+  font-size: var(--font-small);
+  font-weight: var(--weight-bold);
+  color: var(--color-secondary);
+  transition: color 0.3s ease-in-out;
 }
-.btn--primary {
-  background: var(--color-secondary);
-  color: var(--color-white);
-}
-.btn--primary:hover {
-  background: var(--color-grey);
+.portfolio__card__link:hover {
+  color: var(--color-grey);
 }
