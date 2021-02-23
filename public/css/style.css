@@ -125,7 +125,7 @@ img {
 .article__content::before {
   display: block;
   content: " ";
-  height: 4rem;
+  height: 3.5rem;
   visibility: hidden;
   pointer-events: none;
 }
@@ -135,9 +135,12 @@ img {
   margin-bottom: var(--d-4);
 }
 .btn {
+  font: inherit;
+  outline: none;
   color: inherit;
   text-align: center;
   background: none;
+  border: none;
   padding: var(--d-1);
   margin: var(--d-2) 0rem;
   display: inline-block;
@@ -150,6 +153,10 @@ img {
 }
 .btn--primary:hover {
   background: var(--color-grey);
+}
+.btn--block {
+  display: block;
+  width: 100%;
 }
 /* header */
 .header {
@@ -405,4 +412,49 @@ img {
 }
 .portfolio__card__link:hover {
   color: var(--color-grey);
+}
+/* contact */
+.contact__infoGrid {
+  display: flex;
+  justify-content: space-between;
+}
+.contact__card {
+  background: var(--color-light);
+  text-align: center;
+  padding: var(--d-4);
+  width: 23%;
+  border-radius: 3px;
+}
+.contact__card__title {
+  margin-top: var(--d-1);
+}
+.contact__card__text {
+  margin-top: var(--d-1);
+}
+.contact__msgGroup {
+  margin: var(--d-1);
+}
+.contact__msgLink:not(:first-child) {
+  margin-left: var(--d-1);
+}
+.contact__form {
+  margin-top: var(--d-4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form__group {
+  display: block;
+  margin: var(--d-1) 0rem;
+}
+.form__control {
+  display: block;
+  min-width: 35vw;
+  border-radius: 3px;
+  font: inherit;
+  padding: var(--d-1);
+  border: 1.5px solid var(--color-grey);
+}
+.contact__form .btn--block {
+  width: 35vw;
 }
