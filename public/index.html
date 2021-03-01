@@ -9,8 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/app.js" defer></script>
     <title>Jamil - Portfolio</title>
   </head>
@@ -32,14 +34,38 @@
       <div class="header__content container">
         <div>
           <div class="header__text">
-            <h3>hey, I am</h3>
-            <h1 class="heading">Hasnat Jamil</h1>
-            <h3 class="header__secondaryHeading">
+            <h3 data-aos="fade-up" data-aos-duration="1000">hey, I am</h3>
+            <h1
+              class="heading"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+            >
+              Hasnat Jamil
+            </h1>
+            <h3
+              class="header__secondaryHeading"
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+            >
               Web Developer, QA Engineer, UI Designer
             </h3>
-            <a href="#" class="header__cta">Download CV</a>
+            <a
+              href="#"
+              class="header__cta"
+              data-aos="fade-right"
+              data-aos-delay="600"
+              data-aos-duration="1000"
+              >Download CV</a
+            >
           </div>
-          <ul class="header__socialLinks">
+          <ul
+            class="header__socialLinks"
+            data-aos="fade-up"
+            data-aos-delay="800"
+            data-aos-duration="1000"
+          >
             <li class="header__socialLink">
               <a
                 href="https://www.facebook.com/hasnatjamil2021/"
@@ -109,29 +135,57 @@
         </div>
         <div class="about__content">
           <div class="about__text">
-            <h2>Hello, I am</h2>
-            <p>
+            <h2
+              data-aos="fade-right"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+            >
+              Hello, I am
+            </h2>
+            <p
+              data-aos="fade-right"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
               dignissimos similique quae obcaecati, ipsa omnis, adipisci
               voluptatum totam neque dolores nam, quia laudantium possimus
               porro.
             </p>
-            <div class="about__infoGrid">
+            <div
+              class="about__infoGrid"
+              data-aos="fade-up"
+              data-aos-delay="700"
+              data-aos-duration="1000"
+            >
               <div class="about__card">
                 <h3 class="about__cardTitle">02</h3>
                 <div class="about__cardText">Years of Experience</div>
               </div>
-              <div class="about__card">
+              <div
+                class="about__card"
+                data-aos="fade-up"
+                data-aos-delay="800"
+                data-aos-duration="1000"
+              >
                 <h3 class="about__cardTitle">10+</h3>
                 <div class="about__cardText">Completed Projects</div>
               </div>
-              <div class="about__card">
+              <div
+                class="about__card"
+                data-aos="fade-up"
+                data-aos-delay="900"
+                data-aos-duration="1000"
+              >
                 <h3 class="about__cardTitle">03</h3>
                 <div class="about__cardText">Certifications</div>
               </div>
             </div>
           </div>
           <img
+            data-aos="fade-left"
+            data-aos-delay="300"
+            data-aos-duration="1000"
             class="about__img"
             src="./img/about__img.svg"
             alt="Section image on about me section"
@@ -143,7 +197,12 @@
           <h3>Experience and education</h3>
           <h2 class="heading--secondary">Qualification</h2>
         </div>
-        <div class="about__content__education">
+        <div
+          class="about__content__education"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+        >
           <div class="about__workExperience">
             <div class="about__subHeading">
               <box-icon type="solid" name="briefcase"></box-icon>
@@ -164,7 +223,12 @@
               </div>
             </div>
           </div>
-          <div class="about__education">
+          <div
+            class="about__education"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
             <div class="about__subHeading">
               <box-icon name="book-bookmark" type="solid"></box-icon>
               <h2 class="about__subHeading__text">Education</h2>
@@ -179,7 +243,12 @@
               </div>
             </div>
           </div>
-          <div class="about__certification">
+          <div
+            class="about__certification"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+          >
             <div class="about__subHeading">
               <box-icon type="solid" name="certification"></box-icon>
               <h2 class="about__subHeading__text">Certification</h2>
@@ -209,7 +278,12 @@
           <h2 class="heading--secondary">Services</h2>
         </div>
         <div class="services__items">
-          <div class="services__card">
+          <div
+            class="services__card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
             <div class="services__card__body">
               <box-icon name="desktop" size="lg"></box-icon>
               <h3 class="services__card__title">Desktop App Development</h3>
@@ -219,7 +293,12 @@
               </p>
             </div>
           </div>
-          <div class="services__card">
+          <div
+            class="services__card"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+          >
             <div class="services__card__body">
               <box-icon name="mobile" size="lg"></box-icon>
               <h3 class="services__card__title">Mobile App Development</h3>
@@ -229,7 +308,12 @@
               </p>
             </div>
           </div>
-          <div class="services__card">
+          <div
+            class="services__card"
+            data-aos="fade-up"
+            data-aos-delay="700"
+            data-aos-duration="1000"
+          >
             <div class="services__card__body">
               <box-icon name="code-alt" size="lg"></box-icon>
               <h3 class="services__card__title">Web Development</h3>
@@ -245,8 +329,16 @@
             src="./img/service__img.svg"
             class="services__cta__img"
             alt="Image for call to action on the services section"
+            data-aos="fade-right"
+            data-aos-delay="800"
+            data-aos-duration="1000"
           />
-          <div class="services__cta__content">
+          <div
+            class="services__cta__content"
+            data-aos="fade-left"
+            data-aos-delay="800"
+            data-aos-duration="1000"
+          >
             <box-icon
               name="message-square-detail"
               size="csssize"
@@ -267,7 +359,12 @@
           <h2 class="heading--secondary">Portfolio</h2>
         </div>
         <div class="portfolio__cardGrid">
-          <div class="portfolio__card">
+          <div
+            class="portfolio__card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
             <img
               class="portfolio__card__cardImage"
               alt="Image for project"
@@ -279,7 +376,12 @@
               <a href="" class="portfolio__card__link">View Details</a>
             </div>
           </div>
-          <div class="portfolio__card">
+          <div
+            class="portfolio__card"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+          >
             <img
               class="portfolio__card__cardImage"
               alt="Image for project"
@@ -291,7 +393,12 @@
               <a href="" class="portfolio__card__link">View Details</a>
             </div>
           </div>
-          <div class="portfolio__card">
+          <div
+            class="portfolio__card"
+            data-aos="fade-up"
+            data-aos-delay="700"
+            data-aos-duration="1000"
+          >
             <img
               class="portfolio__card__cardImage"
               alt="Image for project"
@@ -313,22 +420,42 @@
           <h2 class="heading--secondary">Contact Me</h2>
         </div>
         <div class="contact__infoGrid">
-          <div class="contact__card">
+          <div
+            class="contact__card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
             <box-icon name="home-alt" size="lg"></box-icon>
             <h2 class="contact__card__title">Location</h2>
             <div class="contact__card__text">Dhaka, Bangladesh</div>
           </div>
-          <div class="contact__card">
+          <div
+            class="contact__card"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+          >
             <box-icon name="phone" size="lg"></box-icon>
             <h2 class="contact__card__title">Phone</h2>
             <div class="contact__card__text">+8801985105527</div>
           </div>
-          <div class="contact__card">
+          <div
+            class="contact__card"
+            data-aos="fade-up"
+            data-aos-delay="700"
+            data-aos-duration="1000"
+          >
             <box-icon name="envelope" size="lg"></box-icon>
             <h2 class="contact__card__title">Email</h2>
             <div class="contact__card__text">hasnatjamil2018@gmail.com</div>
           </div>
-          <div class="contact__card">
+          <div
+            class="contact__card"
+            data-aos="fade-up"
+            data-aos-delay="900"
+            data-aos-duration="1000"
+          >
             <box-icon name="chat" size="lg"></box-icon>
             <h2 class="contact__card__title">Chat</h2>
             <div class="contact__msgGroup">
@@ -358,7 +485,9 @@
         <form
           action="mailto:info@w3docs.com?subject=customer contact"
           class="contact__form"
-          method="post"
+          data-aos="fade-up"
+          data-aos-delay="900"
+          data-aos-duration="1000"
         >
           <div class="form__group">
             <textarea
@@ -368,6 +497,7 @@
               rows="8"
               placeholder="Message"
               required
+              autocomplete="off"
             ></textarea>
           </div>
           <button class="btn btn--primary btn--block" type="submit">
