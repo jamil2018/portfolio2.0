@@ -1,4 +1,6 @@
-AOS.init();
+AOS.init({
+  disable: "mobile",
+});
 const mainNav = document.querySelector("#headerNav");
 const navbarToggleTriggerSection = document.querySelector(
   "section:nth-of-type(1)"

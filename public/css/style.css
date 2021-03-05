@@ -458,3 +458,129 @@ img {
 .contact__form .btn--block {
   width: 35vw;
 }
+/* mobile */
+@media screen and (max-width: 1100px) {
+  .header {
+    position: static;
+  }
+  .header__shape {
+    display: none;
+  }
+  .header__brand {
+    display: none;
+  }
+  .header__text {
+    width: 80vw;
+  }
+  .header__links {
+    width: 100%;
+  }
+  .header__content {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+  .header__image {
+    max-width: 30%;
+  }
+  .about__content {
+    flex-direction: column-reverse;
+  }
+  .about__img {
+    width: 100%;
+  }
+  .about__text {
+    width: 100%;
+    margin-top: var(--d-4);
+    padding-right: 0;
+  }
+  .about__infoGrid {
+    display: block;
+  }
+  .about__card:not(:first-child) {
+    width: 100%;
+    margin-top: var(--d-2);
+  }
+  .about__content__education {
+    display: block;
+  }
+  .about__workExperience {
+    width: 100%;
+    margin-bottom: var(--d-4);
+  }
+  .about__education {
+    width: 100%;
+    margin-bottom: var(--d-4);
+  }
+  .about__certification {
+    margin-top: 0;
+  }
+  .about_certification_content {
+    display: block;
+  }
+  .about_certification_content .about__infoGroup {
+    margin-bottom: var(--d-4);
+  }
+  .about__certification_img {
+    max-width: 80%;
+  }
+  .about__infoGroup {
+    width: 100%;
+  }
+  .services__items {
+    display: block;
+  }
+  .services__card {
+    max-width: 100%;
+  }
+  .services__card:nth-child(2) {
+    margin: var(--d-2) 0;
+  }
+  .services__cta {
+    margin-top: var(--d-4);
+    flex-direction: column;
+    padding: 0;
+  }
+  .services__cta__img {
+    width: 100%;
+  }
+  .services__cta__content {
+    width: 100%;
+    margin-top: var(--d-4);
+  }
+  .services__cta__content box-icon {
+    display: none;
+  }
+  .services__cta__text h2 {
+    font-size: var(--font-h1);
+  }
+  .portfolio__cardGrid {
+    display: block;
+  }
+  .portfolio__card {
+    max-width: 100%;
+  }
+  .contact__infoGrid {
+    display: block;
+  }
+  .contact__card {
+    width: 100%;
+  }
+  .contact__card:not(:last-child) {
+    margin-bottom: var(--d-2);
+  }
+  .form__group {
+    width: 100%;
+  }
+  .form__control {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .container {
+    width: 100vw;
+  }
+  .heading {
+    font-size: var(--font-secondaryHeading);
+  }
+}
