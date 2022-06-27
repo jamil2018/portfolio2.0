@@ -159,6 +159,9 @@ img {
   width: 100%;
 }
 /* header */
+#top {
+  visibility: hidden;
+}
 .header {
   height: var(--header-height);
   padding: var(--d-3) var(--d-5);
